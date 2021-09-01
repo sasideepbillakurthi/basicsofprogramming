@@ -1,0 +1,70 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\pagestyle{empty}
+\usepackage{setspace}
+\usepackage{gensymb}
+\singlespacing
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\norm}[1]{$$\left\lVert#1\right\rVert$$}
+
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\title{
+Assignment - 1
+}
+\author{BILLAKURTHI SHAI SASI DEEP\\ SM21MTECH12006}
+\maketitle
+\newpage
+\bigskip
+\bibliographystyle{IEEEtran}
+\section*{\textbf{Problem}}
+\vspace{0.3cm}
+\noindent
+\textbf{Show that the following triad of points form an equilateral triangle \\
+(a,0), (0,2a), (2a,a), axes being inclined at an angle of 60$^{\circ}$} 
+\vspace{0.3cm}\\
+\text{Answer:}  
+\vspace{0.3cm}
+A triangle is said to be equilateral if length of all sides are equal.
+\vspace{0.6cm} 
+
+The given points are:
+\begin{align*}
+\vec{A} = \myvec{a\\0}, \vec{B} =\myvec{0\\2a},
+\vec{C} =\myvec{2a\\a}
+\end{align*}
+
+
+The distance between points A and B,
+\vspace{0.3cm}
+\begin{align*}
+\norm{ \vec{A} - \vec{B}}&=\myvec{a\\0}-\myvec{0\\2a}=\myvec{a\\-2a}\\\\
+&=\sqrt{(a)^2+(-2a)^2}\\\\
+\norm{ \vec{A} - \vec{B}}&=\sqrt{5}a
+\end{align*}
+Similarly, 
+\begin{align*}
+\norm{ \vec{B} - \vec{C}}&=\myvec{0\\2a}-\myvec{2a\\a}=\myvec{-2a\\a}\\\\
+&=\sqrt{(-2a)^2+(a)^2}\\\\
+\norm{ \vec{B} - \vec{C}}&=\sqrt{5}a
+\end{align*}
+\begin{align*}
+\norm{ \vec{C} - \vec{A}}&=\myvec{2a\\a}-\myvec{a\\0}=\myvec{a\\a}\\\\
+&=\sqrt{(a)^2+(a)^2}\\\\
+\norm{ \vec{C} - \vec{A}}&=\sqrt{2}a
+\end{align*}
+
+
+$\norm{ \vec{A} - \vec{B}} = \norm{ \vec{B} - \vec{C}}  \neq \norm{ \vec{C} - \vec{A}} $ \\\\
+So the given triad of points does not form an equilateral triangle.
+
+\end{document}
+
+\end{document}
